@@ -1,0 +1,1 @@
+mysql -uroot -proot --local-infile=1 tarot -e "LOAD DATA LOCAL INFILE '/docker-entrypoint-initdb.d/data.csv' INTO TABLE tarot_desc FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'"
