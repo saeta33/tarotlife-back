@@ -17,5 +17,5 @@ to do:
 
 ## Set up
 
-cd tarotlife-back
+cd tarotlife-back  
 source ./docker_compose_up.sh
