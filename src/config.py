@@ -3,9 +3,9 @@ class SystemConfig:
   DEBUG = True
 
   SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{user}:{password}@{host}/{db_name}?charset=utf8mb4'.format(**{
-      'user': 'admin',
-      'password': 'tarot123',
-      'host': '',
+      'user': 'tarot',
+      'password': 'Tarot123#',
+      'host': 'db',
       'db_name': 'tarot'
   })
 
