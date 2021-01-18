@@ -43,3 +43,8 @@ CREATE TABLE `users` (
   `mail` varchar(100) DEFAULT NULL,
   `pwd` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+INSERT INTO tarot.users (id, name, address, tel, mail, pwd) VALUES('01', '名前１', '住所１', '080-111-1111', 'user01@mail.com', 'password');
+INSERT INTO tarot.users (id, name, address, tel, mail, pwd) VALUES('02', '名前２', '住所２', '080-222-2222', 'user02@mail.com', 'password');
+
