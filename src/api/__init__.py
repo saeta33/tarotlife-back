@@ -3,6 +3,8 @@ from flask import Flask, request, make_response, jsonify
 from .views.user import user_router
 from .views.karuta import karuta_router
 from .views.user_score import user_score_router
+from .views.reading_list import reading_list_router
+from .views.user_reading import user_reading_router
 from flask_cors import CORS, cross_origin
 from api.database import db
 import config
@@ -95,6 +97,9 @@ def create_app():
   app.register_blueprint(user_router, url_prefix='/api')
   app.register_blueprint(karuta_router, url_prefix='/api')
   app.register_blueprint(user_score_router, url_prefix='/api')
+  app.register_blueprint(reading_list_router, url_prefix='/api')
+  app.register_blueprint(user_reading_router, url_prefix='/api')
+  app.register_blueprint(user_reading_router, url_prefix='/api')
   return app
 
 app = create_app()

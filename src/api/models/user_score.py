@@ -4,9 +4,9 @@ import random
 class User_score(db.Model):
 
   __tablename__ = 'user_score'
-  user_id = db.Column(db.String(10), nullable=True,  primary_key=True)
+  user_id = db.Column(db.String(10), nullable=True, primary_key=True)
   score = db.Column(db.Integer, nullable=True)
-  score_dt = db.Column(db.DateTime, nullable=True,  primary_key=True)
+  score_dt = db.Column(db.DateTime, nullable=True)
   game_id = db.Column(db.String(10), nullable=True)
 
   #def __repr__(self):
@@ -14,7 +14,6 @@ class User_score(db.Model):
 
   def getUser_scoreList(user_id):
 
-    # select * from karuta_desc
     user_score_list = db.session.query(User_score).all()
 
     if user_score_list == None:
@@ -23,8 +22,7 @@ class User_score(db.Model):
       return user_score_list
 
   def registUser_score(user_score):
-    print("user_score")
-    print(user_score)
+    print("user_score", user_score)
 
     record = User_score(
       user_id = user_score['user_id'],

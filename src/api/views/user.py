@@ -42,10 +42,11 @@ def checkUser():
   jsonData = json.dumps(request.json)
   userData = json.loads(jsonData)
 
-  user_res = User.checkUser(userData)
-  #user_schema = UserSchema(many=True)
+  user = User.checkUser(userData)
+  user_schema = UserSchema(many=True)
 
   return make_response(jsonify({
     'code': 200,
-    'user_res': user_res
+    #'user_res': user_res
+    'user_res': user_schema.dump(user).data
   }))

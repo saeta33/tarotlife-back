@@ -17,7 +17,7 @@ class Karuta(db.Model):
     #return '<Karuta %r>' % self.ans
 
   def getKarutaList(t_type):
-    #乱数
+    #乱数でカードを選択
     if t_type=="majour":
          i = random.randint(1,44)
     elif t_type=="court":

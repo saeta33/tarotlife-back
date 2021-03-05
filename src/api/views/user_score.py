@@ -1,7 +1,6 @@
 from flask import Blueprint, request, make_response, jsonify
 from api.models import User_score, User_scoreSchema
 import json
-import logging
 
 
 
@@ -9,7 +8,6 @@ import logging
 user_score_router = Blueprint('user_score_router', __name__)
 
 @user_score_router.route('/user_score/<user_id>', methods=['GET'])
-
 def getUser_scoreList(user_id):
   user_score = User_score.getUser_scoreList(user_id)
   user_score__schema = User_scoreSchema(many=True)

@@ -1,58 +1,52 @@
 from api.database import db, ma
 
 class User(db.Model):
-  __tablename__ = 'users'
-  id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-  name = db.Column(db.String(50), nullable=False)
-  address= db.Column(db.String(100), nullable=True)
-  tel = db.Column(db.String(20), nullable=True)
-  mail = db.Column(db.String(100), nullable=True)
-  pwd = db.Column(db.String(100), nullable=True)
+  __tablename__ = 'musers'
+  id = db.Column(db.Integer, primary_key=True)
+  password = db.Column(db.String(50), nullable=False)
+  usrmail= db.Column(db.String(50), nullable=True)
 
-  def __repr__(self):
-    return '<User %r>' % self.name
+  #def __repr__(self):
+  #  return '<User %r>' % self.name
 
   def checkUser(userData):
     # select * from users
     user_res = db.session.query(User).\
-    filter(User.mail==userData['mail']).\
-    filter(User.pwd==userData['pwd']).\
+    filter(User.usrmail==userData['mail']).\
+    filter(User.password==userData['pwd']).\
     all()
 
     print(userData['mail'])
     print(userData['pwd'])
-    print(user_res)
+    print("len",len(user_res))
 
-    if user_res == []:
-      return 'NG'
-    else:
-      return 'OK'
+    return user_res
 
-  def getUserList():
+  #def getUserList():
     # select * from users
-    user_list = db.session.query(User).all()
+  #  user_list = db.session.query(User).all()
+  #  print(user_list)
+  #  if user_list == None:
+  #    return []
+  #  else:
+  #    return user_res
 
-    if user_list == None:
-      return []
-    else:
-      return user_list
-
-  def registUser(user):
-    record = User(
-      name = user['name'],
-      address = user['address'],
-      tel = user['tel'],
-      mail = user['mail']
-    )
+ # def registUser(user):
+ #   record = User(
+ #     name = user['name'],
+ #     address = user['address'],
+ #     tel = user['tel'],
+ #     mail = user['mail']
+ #   )
 
     # insert into users(name, address, tel, mail) values(...)
-    db.session.add(record)
-    db.session.commit()
+ #   db.session.add(record)
+ #   db.session.commit()
 
-    return user
+ #   return user
 
 from marshmallow_sqlalchemy import ModelSchema
 class UserSchema(ModelSchema):
     class Meta:
       model = User
-      fields = ('id', 'name', 'address', 'tel', 'mail')
+      fields = ('id', 'usrmail')

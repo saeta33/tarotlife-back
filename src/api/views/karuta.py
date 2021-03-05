@@ -16,17 +16,17 @@ def getKarutaList(t_type):
     'karuta': karuta_schema.dump(karuta).data
   }))
 
-@karuta_router.route('/karuta', methods=['POST'])
-def registKaruta():
+#@karuta_router.route('/karuta', methods=['POST'])
+#def registKaruta():
 
   # jsonデータを取得する
-  jsonData = json.dumps(request.json)
-  karutaData = json.loads(jsonData)
+#  jsonData = json.dumps(request.json)
+#  karutaData = json.loads(jsonData)
 
-  karuta = Karuta.registKaruta(karutaData)
-  karuta_schema = KarutaSchema(many=True)
+#  karuta = Karuta.registKaruta(karutaData)
+#  karuta_schema = KarutaSchema(many=True)
 
-  return make_response(jsonify({
-    'code': 200,
-    'karuta': karuta
-  }))
+#  return make_response(jsonify({
+#    'code': 200,
+#    'karuta': karuta
+#  }))
