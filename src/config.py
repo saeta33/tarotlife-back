@@ -2,12 +2,14 @@ class SystemConfig:
 
   DEBUG = True
 
+  import os
+
   SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{user}:{password}@{host}/{db_name}?charset=utf8mb4'.format(**{
-      'user': 'tarot',
-      'password': 'Tarot123#',
+      'user': os.environ["dbuser"],
+      'password': os.environ["dbpass"],
       #'host': 'db',
-      'host': '140.227.199.44:32000',
-      'db_name': 'tarot'
+      'host': os.environ["dbhost"],
+      'db_name': os.environ["dbuser"]
   })
 
 Config = SystemConfig
