@@ -1,0 +1,50 @@
+DELETE FROM tarot.Mreadings;
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(1, 1, 1, 1, 1, 'タイトルタイトルタイトル1スプレッド1','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題1', 'かいとうかいとうかいとうかいとうかいとうかいとう1', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(2, 1, 1, 1, 2, 'タイトルタイトルタイトル2スプレッド2','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題2', 'かいとうかいとうかいとうかいとうかいとうかいとう2', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(3, 1, 1, 1, 3, 'タイトルタイトルタイトル3スプレッド3','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題3', 'かいとうかいとうかいとうかいとうかいとうかいとう3', '20210312', '20210312', 1);
+
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(4, 1, 1, 1, 1, 'タイトルタイトルタイトル4スプレッド1','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題4', 'かいとうかいとうかいとうかいとうかいとうかいとう4', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(5, 1, 1, 1, 2, 'タイトルタイトルタイトル5スプレッド2','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題5', 'かいとうかいとうかいとうかいとうかいとうかいとう5', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(6, 1, 1, 1, 3, 'タイトルタイトルタイトル6スプレッド3','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題6', 'かいとうかいとうかいとうかいとうかいとうかいとう6', '20210312', '20210312', 1);
+
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(7, 1, 1, 1, 1, 'タイトルタイトルタイトル7スプレッド1','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題7', 'かいとうかいとうかいとうかいとうかいとうかいとう7', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(8, 1, 1, 1, 2, 'タイトルタイトルタイトル8スプレッド2','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題8', 'かいとうかいとうかいとうかいとうかいとうかいとう8', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(9, 1, 1, 1, 3, 'タイトルタイトルタイトル9スプレッド3','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題9', 'かいとうかいとうかいとうかいとうかいとうかいとう9', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(10, 1, 1, 1, 1, 'タイトルタイトルタイトル10スプレッド1','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題10', 'かいとうかいとうかいとうかいとうかいとうかいとう10', '20210312', '20210312', 1);
+
+
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(11, 1, 1, 1, 1, 'タイトルタイトルタイトル11スプレッド1','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題11', 'かいとうかいとうかいとうかいとうかいとうかいとう11', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(12, 1, 1, 1, 2, 'タイトルタイトルタイトル12スプレッド2','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題12', 'かいとうかいとうかいとうかいとうかいとうかいとう12', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(13, 1, 1, 1, 3, 'タイトルタイトルタイトル13スプレッド3','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題13', 'かいとうかいとうかいとうかいとうかいとうかいとう13', '20210312', '20210312', 1);
+
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(14, 1, 1, 1, 1, 'タイトルタイトルタイトル14スプレッド1','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題14', 'かいとうかいとうかいとうかいとうかいとうかいとう14', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(15, 1, 1, 1, 2, 'タイトルタイトルタイトル15スプレッド2','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題15', 'かいとうかいとうかいとうかいとうかいとうかいとう15', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(16, 1, 1, 1, 3, 'タイトルタイトルタイトル16スプレッド3','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題16', 'かいとうかいとうかいとうかいとうかいとうかいとう16', '20210312', '20210312', 1);
+
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(17, 1, 1, 1, 1, 'タイトルタイトルタイトル17スプレッド1','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題17', 'かいとうかいとうかいとうかいとうかいとうかいとう17', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(18, 1, 1, 1, 2, 'タイトルタイトルタイトル18スプレッド2','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題18', 'かいとうかいとうかいとうかいとうかいとうかいとう18', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(19, 1, 1, 1, 3, 'タイトルタイトルタイトル19スプレッド3','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題19', 'かいとうかいとうかいとうかいとうかいとうかいとう19', '20210312', '20210312', 1);
+INSERT INTO tarot.Mreadings (id, mcoursename_id, mclassification_id, level_id, mspread_id, title, question, correct_answer, created, modified, updateid) 
+VALUES(20, 1, 1, 1, 1, 'タイトルタイトルタイトル20スプレッド1','問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題問題20', 'かいとうかいとうかいとうかいとうかいとうかいとう20', '20210312', '20210312', 1);
+
+INSERT INTO `Mreadings` (`id`, `mcoursename_id`, `mclassification_id`, `level_id`, `mspread_id`, `title`, `question`, `correct_answer`, `created`, `modified`, `updateid`) VALUES
+(21, 1, 2, 1, 2, '25歳女性。幼なじみの彼との恋のゆくえは', 'question\r\n25歳女性。キャバクラで働いています。幼なじみの彼がいます。私は彼だと思いたいのですが、付き合ってはいません。彼は実家暮らしです。いまから4か月前に彼の家のそばに1Kのマンションを借りました。彼と会いやすくなりました。彼は2～3時程度で家に帰ってしまいます。まるでセフレのようで寂しいです、泊まることはほとんどしません。しかもＨのとき私のことを叩いたり、噛んだりして痛いのです。「辞めて」といっても辞めません。それでも彼のことが好きです。最近、私からばかりLINEをしてしまうし、彼の対応がますます冷たく感じます。ちょっと私からのLINEをしなくなったらどうなるか試しています。あれから2週間経ちます。彼から連絡が来ますか？', 'correct_answer\r\n"彼女にとって彼は幼馴染みでした。中学のときにはお付き合いしていたと話していました。そのころは彼のほうが好きって言ってくれていました。\r\nそれではカードを見ていきましょう。質問は彼から連絡がきますか？です。顕在意識は「ワンドの9」潜在意識は「ソード4」ワンドからソードに変わるのはワンドの冊の中に入っているのが彼だとすると、あまり干渉されるのを嫌うかたなのでしょう。ソード4はあまり、しつこいときやちょっと面倒くさいなと思っています。未来にあるのは「世界」二人の関係はわかりきっている間柄といったところでしょう。キーカードは「ワンド4」から彼にとって、いつでも自分を受け入れてくれてうれしいです。アドバイスは「フールのＲ」あまり、約束とかは苦手そうです。時分のことは少しほっといてほしい様子です。最終結果が「コインのエース」ちゃんとふたりの間で金銭的なやりとりもあって、いくら連絡をしないでそのままにしていたとしても理性的な約束のようなものがあるようです。\r\nアドバイスは、今のままでは彼から連絡がくるのは難しいので、彼にはきっかけをつくるようなLINEをすることをすすめました。"', '2021-03-04 12:18:27', '2021-03-04 12:18:27', 13);
