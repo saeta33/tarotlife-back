@@ -90,6 +90,8 @@ def create_app():
   # CORS対応
   CORS(app)
 
+
+
   # DB設定を読み込む
   app.config.from_object('config.Config')
   db.init_app(app)
@@ -98,7 +100,6 @@ def create_app():
   app.register_blueprint(karuta_router, url_prefix='/api')
   app.register_blueprint(user_score_router, url_prefix='/api')
   app.register_blueprint(reading_list_router, url_prefix='/api')
-  app.register_blueprint(user_reading_router, url_prefix='/api')
   app.register_blueprint(user_reading_router, url_prefix='/api')
   return app
 

@@ -28,7 +28,7 @@ CREATE TABLE `tarot_desc` (
 
 CREATE TABLE `user_score` (
   `user_id` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `score` int DEFAULT NULL,
+  `score` float DEFAULT NULL,
   `score_dt` datetime DEFAULT NULL,
   `game_id` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

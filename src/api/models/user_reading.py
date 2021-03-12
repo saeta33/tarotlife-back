@@ -50,6 +50,7 @@ class Ereadings(db.Model):
       print("inserted")
     else: #同じmreading_id, user_idがあればupdate
       check_ereading.answer = ereading['answer']
+      check_ereading.modified = ereading['modified']
       db.session.commit()
       print("updated")
       
