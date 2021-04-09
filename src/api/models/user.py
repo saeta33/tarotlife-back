@@ -1,4 +1,5 @@
 from api.database import db, ma
+import hashlib
 
 class User(db.Model):
   __tablename__ = 'musers'
@@ -10,14 +11,16 @@ class User(db.Model):
   #  return '<User %r>' % self.name
 
   def checkUser(userData):
+    sha1 = hashlib.sha1(('qwertyuiopasdfghjklzxcvbnm'+userData['pwd']).encode('utf-8')).hexdigest()
     # select * from users
     user_res = db.session.query(User).\
     filter(User.usrmail==userData['mail']).\
-    filter(User.password==userData['pwd']).\
+    filter(User.password==sha1).\
     all()
-
+    
     print(userData['mail'])
     print(userData['pwd'])
+    print(sha1)
     print("len",len(user_res))
 
     return user_res

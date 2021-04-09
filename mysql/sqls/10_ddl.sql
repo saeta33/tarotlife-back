@@ -68,7 +68,8 @@ CREATE TABLE `musers` (
   `updateid` int DEFAULT NULL,
   `mdivision_id` int DEFAULT NULL,
   `taboo_flg` tinyint DEFAULT NULL,
-  `adminflg` tinyint DEFAULT NULL
+  `adminflg` tinyint DEFAULT NULL,
+  `remarks` varchar(124) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 -- tarot.Ereadings definition
